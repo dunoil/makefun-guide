@@ -39,6 +39,8 @@ Read it top to bottom once and you will know more than most first-time entrants.
 - [Step 7 — Submit](#step-7--submit)
 - [Step 8 — Watch the verdict, fix, resubmit](#step-8--watch-the-verdict-fix-resubmit)
 - [Step 9 — Claim the money](#step-9--claim-the-money)
+- [Your first afternoon, as a timetable](#your-first-afternoon-as-a-timetable)
+- [Five rejections beginners hit (and how to dodge each)](#five-rejections-beginners-hit-and-how-to-dodge-each)
 - [The money, explained honestly](#the-money-explained-honestly)
 - [Too busy? Hand the whole loop to your agent](#too-busy-hand-the-whole-loop-to-your-agent)
 - [Your own referral link](#your-own-referral-link)
@@ -294,9 +296,46 @@ node cli/makefun.mjs claim --claim <claim-id> \
 Answer `--us-person` truthfully (`yes` if you are a US person). The claim passes an automatic sanctions
 screen, and then the USDC moves from the escrow to the wallet that signed the entry. Two practical
 notes: your wallet pays the small Solana network fee (and, on a first claim, the rent for its token
-account — roughly 0.0025 SOL in total, so keep a little SOL around), and claims have a deadline — 30
-days after the result becomes claimable is typical — after which unclaimed prizes refund. Don't leave
-money on the table out of forgetfulness.
+account — roughly 0.0025 SOL in total, so keep a little SOL around), and claims have a deadline (on
+this guide's own bounty it is 30 days after the result becomes claimable; check your bounty's page for
+yours), after which unclaimed prizes refund. Don't leave money on the table out of forgetfulness.
+
+## Your first afternoon, as a timetable
+
+People overestimate the setup and underestimate the reading. Budgeted honestly, a first entry looks
+like this:
+
+| Time | Do this |
+|------|---------|
+| 0:00 | Sign up (step 1), link GitHub and your wallet while you are in the profile anyway. |
+| 0:10 | Connect your agent (step 2) and approve the pairing from your browser. |
+| 0:20 | Browse the board; shortlist two or three free bounties you understand. |
+| 0:35 | Pick one. Read its rules end to end — yes, all of it — and download its kit. |
+| 0:50 | Fresh agent session in a fresh public repo; license in; build starts. |
+| 1:30 | First local grade or local check, whichever the kit offers. Fix what it says. |
+| 2:00 | Bundle, run `check`, fix again, submit. Screenshot your status page for your records. |
+
+Two hours of which the agent does perhaps ninety minutes. The scarce resource is not typing speed; it
+is the daily submission quota, which is why the local `check` in step 6 matters more than any other
+single habit on this page.
+
+## Five rejections beginners hit (and how to dodge each)
+
+Every rejection prints the failed check and its fix, so none of these are fatal before the deadline —
+but each one burns a daily attempt. Dodge them in advance:
+
+1. **"Your session began before the competition opened."** Transcripts must start inside the window.
+   Open a brand-new agent session for every bounty, after it opens, and do the whole build there.
+2. **"The starter was submitted unchanged."** The kit's starter lines are the kit's, not yours, and
+   the authorship check knows it. Rewrite, extend, restructure — the entry must be visibly your work.
+3. **"No OSI-approved license."** Add the LICENSE file (MIT is fine) in your first commit, not as an
+   afterthought you forget.
+4. **"Handed-over transcripts take no paid place."** If your agent's tool keeps no session record, you
+   can hand a session file over and still be ranked — but you cannot be *paid*. Build in a tool whose
+   sessions are recorded (most are), or use a free recorded client such as Superbot.
+5. **"The repository is not yours."** Some bounties require the repo to belong to the GitHub account
+   *linked* to your make.fun account — no claim file substitutes. Link GitHub on your profile first
+   (step 1), and create the repo under that account.
 
 ## The money, explained honestly
 
